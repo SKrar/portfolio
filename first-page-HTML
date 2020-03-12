@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="personal-site.css">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>IEN Homepage</title>
+</head>
+<body>
+<!-- <div class="container"> -->
+	<div id="mynavbar">
+		<div class="nav-styling">
+			<div id="close-nav" class="close" onclick="closeNav()">
+				<h6>Close</h6>
+			</div>
+				<h3 style="color: white">Menu</h3>
+				<h6><a href="IEN-PAGE-2.html">Home</a></h6>
+				<div class="menu-button">
+					<h6><a href="#">Film Festivals</a></h6>
+				</div>
+				<h6><a href="IEN-PAGE-2.html">Venues</a></h6>
+				<h6><a href="#">Independent Exhibitors</a></h6>
+				<h6><a href="#">Resources</a></h6>
+				<h6><a href="#">Membership</a></h6>
+		</div>
+		<div class="nav-styling2">
+			<h6><a href="#">CONTACT</a></h6>
+			<h6><a href="#">WORK WITH US</a></h6>
+			<h6><a href="#">ENQUIRIES</a></h6>
+		</div>
+	</div>
+
+	<div id="mynavbar2">
+		<div class="nav-styling">
+			<div id="close-nav2" class="close" onclick="closeNav2()">
+				<h6>Close</h6>
+			</div>
+	 		<form>
+	 				<input type="search" name="searchbar" id="search" placeholder="Search...">
+	 			</form>
+ 				<hr>
+		</div>
+		<div class="nav-styling2">
+			<h6><a href="#">CONTACT</a></h6>
+			<h6><a href="#">WORK WITH US</a></h6>
+			<h6><a href="#">ENQUIRIES</a></h6>
+		</div>
+	</div>
+
+	<div class="container">
+		
+			<div class="d1">
+				<div class="title"><a href="IEN-website.html">
+					<h3><span>M</span>oving <span>P</span>ictures <span>M</span>ember <span>C</span>lub.</h3>
+				</a>
+				</div>
+			</div>
+			<div class="d2">
+				<div class="text-color">
+					<div class="headers">
+						<h6><a id="open-nav" onclick="openNav()"><i class="fa fa-bars"></i> Menu</a> <a href="#" onclick="openNav2()"><i class="fa fa-search"></i> Search</a></h6>
+					</div>
+				</div>
+			</div>
+			<div class="d3">
+				<div class="headers">
+					<h6><a href="#">Members</a></h6>
+				</div>
+				<div>
+					<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+				</div>
+			</div>
+		<div class="d4">
+			<div class="headers">
+				<h6><a href="#my_anchor">Spaces</a></h6>
+			</div>
+		</div>
+		<div class="d5">
+			<div class="headers">
+				<h6><a href="#my_anchor">Cultural Programme</a></h6>
+			</div>
+		</div>
+			<div class="dbreak">
+			</div>
+		<div class="dbreak1">
+			<div  id="sticky">
+				<a href="#" class="link">Overview</a> <a href="#" class="link">Curriculum</a> <a href="#" class="link">Requirements</a> <a href="#" class="link">Fees & Funding</a>
+			</div>
+			<div class="dbreak2"></div>
+		</div>
+			
+ 	</div>
+
+
+
+ 	<div class="container2">
+
+			<div class="d6" id="my_anchor"></div>
+			<div class="d7">
+				<div id="CTA">
+ 					<h6>/ innovation</h6>	
+ 					<h3>Beautiful Spaces</h3>
+				</div>
+			</div>
+			<div class="d8">
+				
+			</div>
+		<div class="d9">
+			<div class="text-color">
+				<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+			</div>
+		</div>
+		<div class="d10">
+			<div>
+				<div id="headers"></div>
+			</div>
+ 		</div>
+ 	</div>
+
+ 	 <!-- <div class="container3">
+ 	 	<div class="d11">
+ 	 	<div class="d12">
+ 	 	<div class="d13">
+ 	 	<div class="d14">
+ 	 	<div class="d15">
+ 	 </div> -->
+
+ 	<button id="pop-up-button" onclick="openForm()">Newsletter Sign Up</button>
+
+ 	<div id="my-form">
+ 		<form class="form-container">
+
+ 			<label for="Name">Full Name</label>
+ 			<input type="text" placeholder="Name...">
+
+ 			<label for="Email">Email Address</label>
+ 			<input type="text" name="Email" placeholder="Email Address...">
+
+ 			<p>Enter your details to recieve information on upcoming events</p>
+
+			<button type="submit" id="close-button-popup" onclick="closeForm()">Submit</button>
+ 			<button type="button" id="close-button-popup" onclick="closeForm()">Close</button>
+
+ 		</form>
+ 	</div>
+ <!-- </div> -->
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ 	<script>
+
+ 		function openForm() {
+ 			document.getElementById('my-form').style.display = "block";
+ 		}
+
+ 		function closeForm() {
+ 			document.getElementById('my-form').style.display = "none";
+ 		}
+
+		function openNav() {
+			document.getElementById('mynavbar').style.width = "512px";
+		// 	document.getElementById('main-doc').style.marginLeft = "250px";
+
+		}function closeNav() {
+			document.getElementById('mynavbar').style.width = "0";
+			document.getElementById('main-doc').style.marginLeft = "0";
+		}
+
+		function openNav2() {
+			document.getElementById('mynavbar2').style.width = "512px";
+		// 	document.getElementById('main-doc').style.marginLeft = "250px";
+
+		}function closeNav2() {
+			document.getElementById('mynavbar2').style.width = "0";
+			document.getElementById('main-doc').style.marginLeft = "0";
+		}
+
+		// function lineMove(){
+		// 	var elem = document.getElementById("red-line");
+		// 	var pos = 0;
+		// 	var id = setInterval(frame, 10);
+		// 	function frame() {
+		// 		if (pos == 350) {
+		// 			clearInterval(id);
+		// 		} else {
+		// 			pos++;
+		// 			elem.style.top = pos + 'px';
+		// 			elem.style.left = pos + 'px';
+		// 		}
+		// 	}
+		// }
+
+
+	</script>
+</body>
+</html>
