@@ -3,7 +3,7 @@ body {
 			border: 0;
 			font-family: helvetica;
 			width: 100%;
-			height: auto;
+			height: 100%;
 		}
 /*MENU BAR*/
 		#mynavbar, #mynavbar2 {
@@ -21,23 +21,7 @@ body {
 			display: grid;
 			grid-template-columns: 50% 50%;
 		}
-		/*SEARCH MENU*/
-		/*#mynavbar2 {
-			position: fixed;
-			z-index: 10;
-			left: 0px;
-			top: 0px;
-			height: 100%;
-			width: 0%;
-			font-family: helvetica;
-			background-color: black;
-			overflow-x: hidden;
-			transition: 0.3s;
-			line-height: 50px;
-			display: grid;
-			grid-template-columns: 50% 50%;
-		}
-*/
+		
 		.nav-styling {
 			font-size: 25px;
 			padding-top: 200px;
@@ -104,14 +88,102 @@ body {
 
 /*GRID 1*/
 
+		.container {
+			position: relative;
+			width: relative;
+			height: 857px;
+			font-size: 40px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 2fr 2fr 2fr 75px;
+			grid-template-areas: 
+			"col1 col2 col col4 col5"
+			"col1 col2 col3 col4 col5"
+			"col1 col2 col3 col4 col5"
+			"footer footer1 footer1 footer1 footer2"
+			;
+			/*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUiKrQUDS1AbIkFtrIwc2tgU4i9vKI_0xJGfUbZ7xMciaZo_KU&s");*/
+			/*background-image: url("https://static.dezeen.com/uploads/2019/07/Olafur-Eliasson-Tate_dezeen_hero2.jpg");*/
+			background-image: url("https://tileyard.co.uk/wp-content/uploads/2019/02/GALLERY.jpg");
+			/*background-image: url("https://i.pinimg.com/originals/00/62/cd/0062cd5941436180197e554513665e03.jpg");*/
+			background-repeat: no-repeat;
+			/*background-attachment: fixed;*/
+			/*background-size: 105%;*/
+			/*overflow-y: none;*/
+			scroll-behavior: smooth;
+		}
+
+		@media (max-width: 800px) {
+			
+			.container {
+				grid-template-columns: 25px 1fr 25px;
+				grid-template-rows: 0.8fr 10px auto 0.7fr auto 10px;
+				grid-template-areas: 
+				"col1 col1 col1"
+				"col col col"
+				"col3 col3 col3"
+				"col4 col4 col4"
+				"col5 col5 col5"
+				"footer1 footer1 footer1"
+			}
+			.container2 {
+				grid-template-columns: 25px 1fr 25px;
+				grid-template-rows: 0.8fr 10px auto 0.7fr auto 10px;
+				grid-template-areas: 
+				"col1 col1 col1"
+				"col col col"
+				"col3 col3 col3"
+				"col4 col4 col4"
+				"col5 col5 col5"
+				"footer1 footer1 footer1"
+			}
+			.container {
+				background-color: black;
+				background-image: none;
+			}
+			.headers {
+				display: none;
+			}
+			.openNav {
+				display: block;
+			}
+			.d1 {
+				background-image: url("https://tileyard.co.uk/wp-content/uploads/2019/02/GALLERY.jpg");
+				background-size: 120%;
+				margin-bottom: -20px;
+			}
+			.d3 {
+				margin:0 10px 0 10px;
+				padding: none;
+			}
+			.d4 {
+				background-image: url("https://tileyard.co.uk/wp-content/uploads/2019/02/Platton-Offices.jpg");
+				background-size: 100%;
+				background-position: relative;
+			}
+			.d6, .d7, .d8, .d9, .d10 {
+				display: none;
+			}
+		}
+
+		/*@media (max-width: 800px) {
+			.d1, .d2, .d3, .d4, .d5 {
+				grid-column: 1 / 6;
+			}
+		}*/
+
+
 		.d1, .d2, .d4, .d5 {
-			grid-row: 1 / 4;
+			/*grid-row: 1 / 4;*/
+			width: relative;
+
 		} 
 		
 		.d1 {
 			background-color: rgba(0, 0, 0, 0.6);
 			border: 0.1px dotted grey;
 			color: white;
+			grid-area: col1;
 			padding-left: 50px; 
 			padding-top: 50px;
 			position: relative;
@@ -119,10 +191,11 @@ body {
 		}
 
 		.d2 {
+			/*background-color: red;*/
 			color: black;
 			border: 0.1px dotted grey;
 			border-left: none;
-			grid-column: 2 / 3;
+			grid-area: col2;
 			color: white;
 			padding-top: 50px;
 		}
@@ -130,23 +203,25 @@ body {
 		.d3 {
 			background-color: rgba(0, 0, 0, 0.6);
 			grid-row: 2 / 4;
-			grid-column: 3 / 4;
+			grid-area: col3;
 			color: black;
 			/*opacity: 0.6;*/
 		}
 
 		.d4 {
+			/*background-color: blue;*/
 			color: black;
 			border: 0.1px dotted grey;
-			/*grid-row: 1 / 4;*/
-			grid-column: 4 / 4;
+			grid-area: col4;
 			color: white;
 			padding-top: 50px;
 		}
 
 		.d5 {
+			/*background-color: orange;*/
 			border: 0.1px dotted grey;
 			border-right: none;
+			grid-area: col5;
 			color: white;
 			padding-right: 50px;
 			padding-top: 50px;
@@ -200,26 +275,30 @@ body {
 			color: white;
 		}
 
+//
+
 		.dbreak {
 			border-top: 0.1px dotted grey;
 			border-bottom: 0.1px dotted grey;
-			background-color: black;
-			grid-column: 1 / 2;
-			grid-row: 4 / 5;
+			grid-area: footer;
+			/*grid-column: 1 / 2;
+			grid-row: 4 / 5;*/
 			height: auto;
 		}
 
 		.dbreak1 {
 			background-color: black;
-			grid-column: 2 / 5;
-			grid-row: span 1;
+			grid-area: footer1;
+			/*grid-column: 2 / 5;
+			grid-row: span 1;*/
 			height: 750px;
 		}
 
 		.dbreak3 {
 			position: relative;
 			background-color: black;
-			grid-column: 5 / 6;
+			grid-area: footer2;
+			/*grid-column: 5 / 6;*/
 			height: 750px;
 			z-index: 202;
 		}
@@ -233,28 +312,11 @@ body {
 			padding-top: 50px;
 		}
 
-		.container {
-			position: relative;
-			width: 100%;
-			height: 825px;
-			font-size: 40px;
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-			grid-template-rows: 2fr 2fr 2fr 75px;
-			/*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUiKrQUDS1AbIkFtrIwc2tgU4i9vKI_0xJGfUbZ7xMciaZo_KU&s");*/
-			/*background-image: url("https://static.dezeen.com/uploads/2019/07/Olafur-Eliasson-Tate_dezeen_hero2.jpg");*/
-			background-image: url("https://tileyard.co.uk/wp-content/uploads/2019/02/GALLERY.jpg");
-			/*background-image: url("https://i.pinimg.com/originals/00/62/cd/0062cd5941436180197e554513665e03.jpg");*/
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			/*background-size: 105%;*/
-			overflow-y: none;
-			scroll-behavior: smooth;
-		}
+		
 
 		.container2 {
 			position: absolute;
-			width: 100%;
+			width: relative;
 			font-size: 40px;
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -299,12 +361,13 @@ body {
 			z-index: 98;
 		}
 
-		nav {
+		/*nav {
 			grid-row: 4;
 			grid-column: 1 / 6;
 			color: white;
+			background-color: purple;
 			border-right: 0.1px dotted grey;
-		}
+		}*/
 
 		h3, h6 {
 			padding: 0;
@@ -324,18 +387,18 @@ body {
 		}
 
 		.headers {
-			position: fixed;
+			position: absolute;
 			top: 50px;
 			color: #F89E9A;
 		}
 
-		#sticky {
+		/*#sticky {
 			position: -webkit-sticky;
 			position: sticky;
 			top: 0;
 			z-index: 199;
 			color: white;
-		}
+		}*/
 
 		.link {
 			font-size: 20px;
@@ -356,10 +419,6 @@ body {
 			padding: 1px;
 			padding-top: 20px;
 			padding-left: 1px;
-			color: white;
-		}
-
-		nav {
 			color: white;
 		}
 
