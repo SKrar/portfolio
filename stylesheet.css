@@ -1,0 +1,456 @@
+body {
+			margin: 0;
+			border: 0;
+			font-family: helvetica;
+			width: 100%;
+			height: auto;
+		}
+/*MENU BAR*/
+		#mynavbar, #mynavbar2 {
+			position: fixed;
+			z-index: 1003;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			width: 0%;
+			font-family: helvetica;
+			background-color: black;
+			overflow-x: hidden;
+			transition: 0.3s;
+			line-height: 50px;
+			display: grid;
+			grid-template-columns: 50% 50%;
+		}
+		/*SEARCH MENU*/
+		/*#mynavbar2 {
+			position: fixed;
+			z-index: 10;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			width: 0%;
+			font-family: helvetica;
+			background-color: black;
+			overflow-x: hidden;
+			transition: 0.3s;
+			line-height: 50px;
+			display: grid;
+			grid-template-columns: 50% 50%;
+		}
+*/
+		.nav-styling {
+			font-size: 25px;
+			padding-top: 200px;
+			border: 0.1px dotted grey;
+			grid-column: 2 / 2;
+			grid-row-start: 1;
+		}
+
+		.nav-styling2 {
+			display: hidden;
+			position: absolute;
+			bottom: 10px;
+			left: 5px;
+			grid-column: 1 / 2;
+			grid-row-start: 1;
+			font-size: 15px;
+			border-bottom: 0.1px dotted grey;
+		}
+
+		#close-nav {
+			position: absolute;
+			top: 38px;
+			left: 260px;
+			color: white;
+			cursor: pointer;
+			opacity: 1;
+		}
+
+		#close-nav2 {
+			position: absolute;
+			top: 40px;
+			left: 150px;
+			cursor: pointer;
+			color: white
+		}
+
+		.close:hover {
+			text-decoration: underline;
+			opacity: 1;
+		}
+
+		#search {
+			background-color: black;
+			color: white;
+			border: none;
+			outline: none;
+			border-bottom-color: white;
+			border-bottom-width: 3px;
+			font-size: 25px;
+			width: 99%;
+			float: left;
+			margin-left: 10px;
+		}
+
+		#searchbutton {
+			float: right;
+		}
+
+		hr {
+			float: left;
+			width: 80%;
+			border-collapse: collapse;
+		}
+
+/*GRID 1*/
+
+		.d1, .d2, .d4, .d5 {
+			grid-row: 1 / 4;
+		} 
+		
+		.d1 {
+			background-color: rgba(0, 0, 0, 0.6);
+			border: 0.1px dotted grey;
+			color: white;
+			padding-left: 50px; 
+			padding-top: 50px;
+			position: relative;
+			border-left: none;
+		}
+
+		.d2 {
+			color: black;
+			border: 0.1px dotted grey;
+			border-left: none;
+			grid-column: 2 / 3;
+			color: white;
+			padding-top: 50px;
+		}
+
+		.d3 {
+			background-color: rgba(0, 0, 0, 0.6);
+			grid-row: 2 / 4;
+			grid-column: 3 / 4;
+			color: black;
+			/*opacity: 0.6;*/
+		}
+
+		.d4 {
+			color: black;
+			border: 0.1px dotted grey;
+			/*grid-row: 1 / 4;*/
+			grid-column: 4 / 4;
+			color: white;
+			padding-top: 50px;
+		}
+
+		.d5 {
+			border: 0.1px dotted grey;
+			border-right: none;
+			color: white;
+			padding-right: 50px;
+			padding-top: 50px;
+		}
+
+/*GRID 2*/
+
+		.d6, .d7, .d8, .d9, .d10 {
+			grid-row-start: 1;
+			z-index: 103;
+			padding-right: 50px;
+			padding-top: 50px;
+		}
+
+		.d6 {
+			/*background-color: black;*/
+			border: 0.1px, 0.1px, 0px, 0.1px dotted grey;
+			border-left: none;
+			color: white;
+			/*padding-right: 50px;
+			padding-top: 50px;*/
+		}
+
+		.d7 {
+			background-color: rgba(0, 0, 0, 0.6);
+			border: 0.1px dotted grey;
+			color: white;
+			/*padding-right: 50px;
+			padding-top: 50px;*/
+			z-index: 100;
+		}
+
+		.d8 {
+			border: 0.1px, 0.1px, 0px, 0.1px dotted grey;
+			color: white;
+			/*padding-right: 50px;
+			padding-top: 50px;*/
+		}
+
+		.d9 {
+			background-color: rgba(0, 0, 0, 0.6);
+			border: 0.1px dotted grey;
+			/*color: white;*/
+			/*padding-right: 50px;
+			padding-top: 50px;*/
+		}
+
+		.d10 {
+			background-color: rgba(0, 0, 0, 0.6);
+			border: 0.1px dotted grey;
+			color: white;
+		}
+
+		.dbreak {
+			border-top: 0.1px dotted grey;
+			border-bottom: 0.1px dotted grey;
+			background-color: black;
+			grid-column: 1 / 2;
+			grid-row: 4 / 5;
+			height: auto;
+		}
+
+		.dbreak1 {
+			background-color: black;
+			grid-column: 2 / 5;
+			grid-row: span 1;
+			height: 750px;
+		}
+
+		.dbreak3 {
+			position: relative;
+			background-color: black;
+			grid-column: 5 / 6;
+			height: 750px;
+			z-index: 202;
+		}
+
+/*GRID 3*/
+
+		.d11, .d12, .d13, .d14, .d15 {
+			grid-row-start: 1;
+			z-index: 103;
+			padding-right: 50px;
+			padding-top: 50px;
+		}
+
+		.container {
+			position: relative;
+			width: 100%;
+			height: 825px;
+			font-size: 40px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 2fr 2fr 2fr 75px;
+			/*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUiKrQUDS1AbIkFtrIwc2tgU4i9vKI_0xJGfUbZ7xMciaZo_KU&s");*/
+			/*background-image: url("https://static.dezeen.com/uploads/2019/07/Olafur-Eliasson-Tate_dezeen_hero2.jpg");*/
+			background-image: url("https://tileyard.co.uk/wp-content/uploads/2019/02/GALLERY.jpg");
+			/*background-image: url("https://i.pinimg.com/originals/00/62/cd/0062cd5941436180197e554513665e03.jpg");*/
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			/*background-size: 105%;*/
+			overflow-y: none;
+			scroll-behavior: smooth;
+		}
+
+		.container2 {
+			position: absolute;
+			width: 100%;
+			font-size: 40px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 3fr 1fr 3fr;
+			/*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUiKrQUDS1AbIkFtrIwc2tgU4i9vKI_0xJGfUbZ7xMciaZo_KU&s");*/
+			/*background-image: url("https://static.dezeen.com/uploads/2019/07/Olafur-Eliasson-Tate_dezeen_hero2.jpg");*/
+			background-image: url("file:///Users/admin/Desktop/Screenshot%202020-02-11%20at%2022.13.13.png");
+			background-image: url("https://tileyard.co.uk/wp-content/uploads/2019/02/Platton-Offices.jpg");
+			/*background-image: url("https://i.pinimg.com/originals/00/62/cd/0062cd5941436180197e554513665e03.jpg");*/
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100%;
+		}
+
+		/*.container3 {
+			position: absolute;
+			width: 100%;
+			font-size: 40px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 3fr 1fr 3fr;
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUiKrQUDS1AbIkFtrIwc2tgU4i9vKI_0xJGfUbZ7xMciaZo_KU&s");
+			background-image: url("https://static.dezeen.com/uploads/2019/07/Olafur-Eliasson-Tate_dezeen_hero2.jpg");
+			background-image: url("file:///Users/admin/Desktop/Screenshot%202020-02-11%20at%2022.13.13.png");
+			background-image: url("https://tileyard.co.uk/wp-content/uploads/2019/02/Platton-Offices.jpg");
+			background-image: url("https://i.pinimg.com/originals/00/62/cd/0062cd5941436180197e554513665e03.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100%;
+		}*/
+
+
+		#CTA {
+			position: absolute;
+			padding-left: 4px;
+		}
+
+		
+		.title {
+			position: fixed;
+			width: 15%;
+			z-index: 98;
+		}
+
+		nav {
+			grid-row: 4;
+			grid-column: 1 / 6;
+			color: white;
+			border-right: 0.1px dotted grey;
+		}
+
+		h3, h6 {
+			padding: 0;
+			margin: 0;
+			/*color: #24334A;*/
+			color: white;
+		}
+
+		h5 {
+			padding: 0;
+			margin: 0;
+			padding-left: 4px;
+		}
+
+		h6 {
+			font-size: 16px;
+		}
+
+		.headers {
+			position: fixed;
+			top: 50px;
+			color: #F89E9A;
+		}
+
+		#sticky {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			z-index: 199;
+			color: white;
+		}
+
+		.link {
+			font-size: 20px;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		p {
+			font-size: 14px;
+			padding: 1px;
+			padding-top: 20px;
+			padding-left: 1px;
+			color: white;
+		}
+
+		nav {
+			color: white;
+		}
+
+/*POP UP FORM*/
+
+		#pop-up-button {
+			color: white;
+			position: fixed;
+			bottom: 20px;
+			right: 10px;
+			width: 230px;
+			height: 40px;
+			padding: 5px 10px 5px 10px;
+			background-color: black;
+			border: 1px solid gray;
+			border-radius: 10px;
+			cursor: pointer;
+			z-index: 1000;
+		}
+
+		#my-form {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			display: none;
+			height: 400px;
+			width: 255px;
+			background-color: rgba(0, 0, 0, 0.6);
+			color: white;
+			border-left-top: 0.1px dotted grey;
+			padding-top: 20px;
+			z-index: 1000;
+		}
+
+		#close-button-popup {
+			position: absolute;
+			bottom: 20px;
+			right: 10px;
+			width: 90%;
+			height: 40px;
+			padding: 5px;
+			background-color: black;
+			color: white;
+			border: 1px solid grey;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+
+		.form-container {
+			padding-top: 10px;
+			padding-left: 5px;
+		}
+
+		form input {
+			width: 95%;
+			height: 30px;
+			border-radius: 2px;
+			outline: none;
+			background-color: black;
+			border: 1px solid white;
+			cursor: text;
+			color: white;
+			/*margin-left: 3px;*/
+			margin-right: 3px;
+		}
+
+		#red-line {
+			position: fixed;
+			right: 300px;
+			top: 20px;
+			bottom: 20px;
+			width: 20px;
+			background-color: red;
+			z-index: 2000;
+			transform: skewX(-20deg);
+		}
+
+		#blue-line {
+			/*position: fixed;*/
+			bottom: 40px;
+			left: 20px;
+			right: 20px;
+			width: 20px;
+			z-index: 2000;
+			background-color: blue;
+		}
+
+		span {
+			color: #F89E9A;
+		}
+
+		.text {
+			color: black;
+		}
