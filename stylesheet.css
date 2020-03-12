@@ -116,31 +116,19 @@ body {
 		@media (max-width: 800px) {
 			
 			.container {
-				grid-template-columns: 25px 1fr 25px;
-				grid-template-rows: 0.8fr 10px auto 0.7fr auto 10px;
-				grid-template-areas: 
-				"col1 col1 col1"
-				"col col col"
-				"col3 col3 col3"
-				"col4 col4 col4"
-				"col5 col5 col5"
-				"footer1 footer1 footer1"
-			}
-			.container2 {
-				grid-template-columns: 25px 1fr 25px;
-				grid-template-rows: 0.8fr 10px auto 0.7fr auto 10px;
-				grid-template-areas: 
-				"col1 col1 col1"
-				"col col col"
-				"col3 col3 col3"
-				"col4 col4 col4"
-				"col5 col5 col5"
-				"footer1 footer1 footer1"
-			}
-			.container {
 				background-color: black;
 				background-image: none;
+				grid-template-columns: 25px 1fr 25px;
+				grid-template-rows: 1fr 10px auto 0.7fr auto 10px;
+				grid-template-areas: 
+				"col1 col1 col1"
+				"col col col"
+				"col3 col3 col3"
+				"col4 col4 col4"
+				"col5 col5 col5"
+				"footer1 footer1 footer1"
 			}
+			
 			.headers {
 				display: none;
 			}
@@ -163,6 +151,9 @@ body {
 			}
 			.d6, .d7, .d8, .d9, .d10 {
 				display: none;
+			}
+			#my-form {
+				background-color: rgba(0, 0, 0, 1);
 			}
 		}
 
@@ -275,7 +266,7 @@ body {
 			color: white;
 		}
 
-//
+/*BREAKS*/
 
 		.dbreak {
 			border-top: 0.1px dotted grey;
@@ -392,13 +383,13 @@ body {
 			color: #F89E9A;
 		}
 
-		/*#sticky {
+		#sticky {
 			position: -webkit-sticky;
 			position: sticky;
 			top: 0;
 			z-index: 199;
 			color: white;
-		}*/
+		}
 
 		.link {
 			font-size: 20px;
@@ -483,27 +474,6 @@ body {
 			color: white;
 			/*margin-left: 3px;*/
 			margin-right: 3px;
-		}
-
-		#red-line {
-			position: fixed;
-			right: 300px;
-			top: 20px;
-			bottom: 20px;
-			width: 20px;
-			background-color: red;
-			z-index: 2000;
-			transform: skewX(-20deg);
-		}
-
-		#blue-line {
-			/*position: fixed;*/
-			bottom: 40px;
-			left: 20px;
-			right: 20px;
-			width: 20px;
-			z-index: 2000;
-			background-color: blue;
 		}
 
 		span {
